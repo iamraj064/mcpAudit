@@ -1,0 +1,42 @@
+{
+    "jupyter.askForKernelRestart": false,
+    "workbench.startupEditor": "none",
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "files.autoSave": "afterDelay",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "python.defaultInterpreterPath": "c:\\Users\\DELL\\Desktop\\LAngchain\\newpractices\\venv\\Scripts\\python.exe",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "mcpAudit.forwarders": [
+        
+
+
+        
+        
+       
+        {
+            "enabled": true,
+            "type": "FILE",
+            "name": "Default file log. Required for log view panel in VSCode window",
+            "maxSize": "20M",
+            "path": "C:\\MCP Audit\\mcp.log"
+        },
+        {
+            "type": "HEC",
+            "enabled": true,
+            "index": "main",
+            "name": "Splunk logger",
+            "sourcetype": "mcp_tools",
+            "tokenSecretKey": "HEC_TOKEN",
+            "url": "https://localhost:8088/services/collector"
+
+        }
+    ],
+    "chat.mcp.gallery.enabled": true
+
+}
+    
