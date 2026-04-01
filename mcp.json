@@ -1,0 +1,40 @@
+{
+	"servers": {
+		"tavily-search": {
+			"type": "stdio",
+			"command": "python",
+			"args": [
+				"C:/MCP_Audit/mcp_proxy.py",
+				"npx",
+				"-y",
+				"tavily-mcp@0.2.15"
+			],
+			"env": {
+				"TAVILY_API_KEY": "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"
+			}
+		},
+		"playwright": {
+			"command": "python",
+			"args": [
+				"C:/MCP_Audit/mcp_proxy.py",
+				"npx",
+				"-y",
+				"@playwright/mcp@latest"
+			],
+			"env": {
+				"PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1"
+			},
+			"type": "stdio"
+		},
+		"microsoft/playwright-mcp": {
+			"type": "stdio",
+			"command": "npx",
+			"args": [
+				"@playwright/mcp@latest"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "0.0.1-seed"
+		}
+	},
+	"inputs": []
+}
